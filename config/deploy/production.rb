@@ -6,9 +6,11 @@
 server "34.203.94.126", user: "ubuntu", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-
+app = ENV['APP']
+app = "codeboxx_paul" if  app.blank?
+set :application, app
 set :rails_env, "production"
-set :deploy_to, "/home/ubuntu/apps/MY-TEAM-LEADER-FIRSTNAME-OR-ELSE"
+set :deploy_to, "/home/ubuntu/apps/#{app}"
 set :linked_dirs, %w{tmp/pids tmp/sockets log}
 set :linked_files, %w{config/secrets.yml config/database.yml}
 
