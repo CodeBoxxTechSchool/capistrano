@@ -8,5 +8,7 @@
    gem 'rvm1-capistrano3', require: false
    gem 'capistrano3-puma'
    ```
-1. Inside `/config/deploy.rb`, update your application name and your repository url
-1. Inside `config/deploy/production.rb`, update the `deploy_to` path
+1. From this repository, copy/paste those files to the same path of your existing application: `Capfile`, `/config/deploy.rb`, `/config/deploy/production.rb`
+1. The `Capfile` file needs to be at the root of your project
+1. Inside the file `/config/deploy.rb`, update your application name and your repository url
+1. Inside the file `/config/deploy/production.rb`, update the `deploy_to` path
