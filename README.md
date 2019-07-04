@@ -1,6 +1,6 @@
 # How-To
 
-1. Use only what you need from the `Gemfile` and copy/paste it to your **own** `Gemfile`. Basically it would be gems related to Capistrano, something like these ones
+1. Use only what you need from the `Gemfile` and copy/paste it to your **own** `Gemfile`. Basically it would be gems related to Capistrano, something like these ones inside the **development group** of your Gemfile
    ```ruby
    gem 'capistrano', '~> 3.10', require: false
    gem 'capistrano-rails', '~> 1.4', require: false
