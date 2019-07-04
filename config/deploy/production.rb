@@ -7,7 +7,7 @@ server "34.203.94.126", user: "ubuntu", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 app = ENV['APP']
-app = "FULL_NAME" if  app.empty?
+app = "YOUR_FULL_NAME" if  app.empty?
 set :application, app
 set :rails_env, "development"
 set :deploy_to, "/home/ubuntu/apps/#{app}"
