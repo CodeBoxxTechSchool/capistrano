@@ -16,10 +16,10 @@
    ```
 3. From this repository, copy/paste those files to the same path of your existing application: `Capfile`, `/config/deploy.rb`, `/config/deploy/production.rb`
 4. The `Capfile` file needs to be at the root of your project
-5. Inside the file `/config/deploy.rb`, update your application name and your repository url
+5. Inside the file `/config/deploy.rb`, update your application name and your repository url. **Use the SSH link as usual, not the HTTPS**
 6. Inside the file `/config/deploy/production.rb`, update the `app` name on line 11
-7. Finally, in `config/environments/development.rb` of your own application, add the following line
+7. In `config/environments/development.rb` of your own application, add the following line
    ```ruby
    config.hosts << "<YOUR-DOMAIN-NAME>"
    ```
-  
+8. Finally, make sure to add `CodeboxxGrading`, `MathieuHoude` and your own coaches as collaborators on your repo. **Your repo should now be set to private**
