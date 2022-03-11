@@ -18,7 +18,7 @@
 4. The `Capfile` file needs to be at the root of your project
 5. Inside the file `/config/deploy.rb`, update your application name and your repository url. **Use the SSH link as usual, not the HTTPS**
 6. Inside the file `/config/deploy/production.rb`, update the `app` name on line 11
-7. In `config/environments/development.rb` of your own application, add the following line
+7. **If on Rails 6 or higher**, in `config/environments/development.rb` of your own application, add the following line
    ```ruby
    config.hosts << "<YOUR-DOMAIN-NAME>"
    ```
